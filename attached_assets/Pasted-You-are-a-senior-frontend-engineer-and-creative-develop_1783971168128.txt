@@ -150,7 +150,7 @@ PAGE STRUCTURE
 
    - Overlay text fades in:
 
-     "Crafted Elegance"
+     "FEMI'S HOUSE"
 
      "A Modern Expression of Tradition"
 

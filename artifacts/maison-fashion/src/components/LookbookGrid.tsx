@@ -67,7 +67,7 @@ export function LookbookGrid() {
         {items.map((item, i) => (
           <div 
             key={item.id} 
-            ref={el => itemsRef.current[i] = el}
+            ref={(el) => { itemsRef.current[i] = el; }}
             className={`${item.colSpan} flex flex-col group cursor-pointer`}
           >
             <div className="overflow-hidden bg-muted aspect-[4/5] relative mb-6">

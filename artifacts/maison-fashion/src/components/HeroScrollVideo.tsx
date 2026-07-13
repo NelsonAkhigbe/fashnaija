@@ -172,7 +172,7 @@ export function HeroScrollVideo() {
         {isTouch && (
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none px-6 bg-black/30">
             <h2 className="text-white text-4xl md:text-5xl font-serif tracking-widest text-center uppercase animate-in fade-in duration-1000 slide-in-from-bottom-8">
-              Crafted Elegance
+              FEMI'S HOUSE
             </h2>
           </div>
         )}

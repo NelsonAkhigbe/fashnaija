@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 mb-24">
         
         <div className="col-span-1 md:col-span-5 pr-10">
-          <h3 className="font-serif text-2xl md:text-3xl text-white mb-8 tracking-[0.15em] uppercase">Crafted Elegance</h3>
+          <h3 className="font-serif text-2xl md:text-3xl text-white mb-8 tracking-[0.15em] uppercase">FEMI'S HOUSE</h3>
           <p className="max-w-md leading-relaxed font-light text-white/60 text-sm">
             Defining the modern silhouette through uncompromising heritage craftsmanship and forward-thinking design. A quiet rebellion in tailoring.
           </p>
@@ -44,7 +44,7 @@ export function Footer() {
       </div>
       
       <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between items-center pt-10 border-t border-white/10 uppercase tracking-[0.1em]">
-        <p>&copy; {new Date().getFullYear()} Crafted Elegance. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} FEMI'S HOUSE. All rights reserved.</p>
         <div className="flex gap-8 mt-6 md:mt-0">
           <a href="#" className="hover:text-white transition-colors">Instagram</a>
           <a href="#" className="hover:text-white transition-colors">Pinterest</a>
