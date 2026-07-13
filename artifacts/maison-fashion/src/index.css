@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --font-sans: 'Jost', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+:root {
+  --background: 60 10% 97%; /* #f8f8f5 off-white */
+  --foreground: 0 0% 6%;    /* #0f0f0f stark black */
+  --border: 0 0% 90%;
+  --muted: 0 0% 92%;
+  --muted-foreground: 0 0% 40%;
+}
+
+.dark {
+  --background: 0 0% 6%;
+  --foreground: 60 10% 97%;
+  --border: 0 0% 15%;
+  --muted: 0 0% 12%;
+  --muted-foreground: 0 0% 60%;
+}
+
+@layer base {
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

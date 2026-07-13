@@ -1,0 +1,315 @@
+You are a senior frontend engineer and creative developer. Build a production-ready, immersive fashion website with scroll-controlled video animation.
+
+
+
+
+
+
+
+Your goal is to create a premium, Apple-style scroll experience where the video is controlled entirely by scroll position (scroll scrubbing), not autoplay.
+
+
+
+========================
+
+CORE FUNCTIONALITY
+
+========================
+
+
+
+1. The video must be frame-synced to scroll:
+
+   - Scrolling DOWN → video moves forward
+
+   - Scrolling UP → video rewinds
+
+   - Use video.currentTime tied to scroll progress
+
+
+
+2. The animation must feel:
+
+   - Smooth (no lag or jumps)
+
+   - Cinematic and premium
+
+   - Like a 3D product showcase
+
+
+
+3. The page must have enough scroll height (e.g. 300–400vh) to allow smooth scrubbing.
+
+
+
+========================
+
+TECH IMPLEMENTATION (STRICT)
+
+========================
+
+
+
+- Use vanilla JS OR React (preferred: React + Vite)
+
+- Use GSAP + ScrollTrigger for scroll syncing
+
+- Use requestAnimationFrame for smooth updates
+
+- Preload the video before interaction
+
+
+
+IMPORTANT:
+
+- Use scrub: true in ScrollTrigger
+
+- Prevent stuttering by syncing scroll progress → video duration
+
+- Clamp values to avoid overflow
+
+
+
+Example logic:
+
+scrollProgress = scrollY / (totalScrollableHeight)
+
+video.currentTime = scrollProgress * video.duration
+
+
+
+========================
+
+VIDEO SETUP
+
+========================
+
+
+
+- Place video in a sticky container:
+
+  - position: sticky
+
+  - top: 0
+
+  - height: 100vh
+
+
+
+- The video should:
+
+  - Fill the screen (object-fit: cover)
+
+  - Be centered
+
+  - Have no controls
+
+  - Be muted
+
+
+
+========================
+
+DESIGN SYSTEM (LUXURY)
+
+========================
+
+
+
+Style must feel like a high-end fashion brand:
+
+
+
+- Background: pure white (#FFFFFF)
+
+- Accent: gold (#C9A24A)
+
+- Typography:
+
+  - Headings: elegant serif
+
+  - Body: clean sans-serif
+
+- Lots of whitespace
+
+- Minimal UI
+
+
+
+========================
+
+PAGE STRUCTURE
+
+========================
+
+
+
+1. HERO SECTION (sticky video)
+
+   - Fullscreen video controlled by scroll
+
+   - Overlay text fades in:
+
+     "Crafted Elegance"
+
+     "A Modern Expression of Tradition"
+
+
+
+2. SCROLL EXPERIENCE
+
+   - As video progresses:
+
+     - Slight zoom effect
+
+     - Subtle transform for depth
+
+   - Add text that fades in/out:
+
+     "Handcrafted Detail"
+
+     "Luxury Fabric Flow"
+
+     "Timeless Design"
+
+
+
+3. CATALOG SECTION (after video)
+
+   - Grid layout (3 columns desktop, responsive)
+
+   - Each item:
+
+     - Image
+
+     - Name
+
+     - Hover effect (scale + shadow)
+
+   - Clean spacing and premium feel
+
+
+
+4. FEATURE SECTION
+
+   - Large image + text split layout
+
+
+
+5. FOOTER
+
+   - Minimal
+
+
+
+========================
+
+ANIMATIONS
+
+========================
+
+
+
+- Use GSAP for:
+
+  - Fade-ins
+
+  - Scale effects
+
+  - Parallax feel
+
+
+
+- Keep animations:
+
+  - Smooth
+
+  - Subtle
+
+  - Not exaggerated
+
+
+
+========================
+
+PERFORMANCE (IMPORTANT)
+
+========================
+
+
+
+- Preload video metadata
+
+- Optimize scroll handler
+
+- Avoid unnecessary re-renders
+
+- Use will-change for smooth transforms
+
+
+
+========================
+
+MOBILE FALLBACK
+
+========================
+
+
+
+- Disable scroll scrubbing on mobile
+
+- Instead:
+
+  - Autoplay video (muted, loop)
+
+  - Keep layout clean
+
+
+
+========================
+
+OUTPUT REQUIREMENTS
+
+========================
+
+
+
+- Clean folder structure
+
+- Fully working code
+
+- Comments explaining key parts
+
+- Ready to run in Replit
+
+- No placeholders — real implementation
+
+
+
+========================
+
+EXTRA (IMPORTANT)
+
+========================
+
+
+
+Make the experience feel like:
+
+- Apple product pages
+
+- High-end fashion campaign sites
+
+
+
+Focus on:
+
+- Smoothness
+
+- Elegance
+
+- Immersion
+
+
+
+Do not overcomplicate UI — prioritize the video experience.

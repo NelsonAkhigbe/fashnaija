@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Crafted Elegance"
+version = "1.0.0"
+id = "artifacts/maison-fashion"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18395
+
+[services.development]
+run = "pnpm --filter @workspace/maison-fashion run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/maison-fashion", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/maison-fashion/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18395"
+BASE_PATH = "/"
